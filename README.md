@@ -11,7 +11,7 @@ This is a website for Niko Darci-Maher's personal gallery of creative projects.
 * To generate the detail page for a project, use `gen_detail_index.py`, with that project's folder name as a command line argument. This script writes a new `index.html` into the corresponding project folder.
 
 * `gen_detail_index.py` requires two files to be present inside the project folder to work correctly:
-1. A text file called `blurb.txt` with the following format:<br/>
+1. A text file called `blurb.html` with the following format:<br/>
 Title<br/>
 Project medium<br/>
 Date [YYYY-MM-DD]<br/>
