@@ -6,22 +6,125 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Niko Darci-Maher">
+	<!-- site title shown on tab -->
 	<title>Niko Darci-Maher</title>
-	<link rel="stylesheet" href="../niko.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<!-- linked style sheet to build page -->
+	<link rel="stylesheet" href="niko.css">
+	<!-- linked favicon for tab image -->
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
+<!-- front page index -->
+
 <body>
-	<div class="designheading">
-		<h1>NIKO DARCI-MAHER</h1>
-		<div class="subtitle">niko.darcimaher@gmail.com</div>
-		<div class="frontpagedesc">foobar foo foobie</div>
+	<div class="wrapper">
+		<!-- header -->
+		<div class="page-header">
+			<!-- name -->
+			<div class="headertile">
+				<h1>
+					NIKO DARCI-MAHER
+				</h1>
+			</div>
+			<!-- blurb -->
+			<div class="headertile">
+				<div class="frontpageblurb">Welcome to my gallery of creative projects.<br/>Click on an image to explore.</div>		
+			</div>
+			<!-- icons -->
+			<div class="headertile">
+				<a href="mailto:niko.darcimaher@gmail.com" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="mail-outline"></ion-icon>
+				</a>
+				<a href="https://www.instagram.com/shniko/?hl=en" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</a>
+				<a href="https://twitter.com/nikodarcimaher" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-twitter"></ion-icon>
+				</a>
+				<a href="https://www.linkedin.com/in/nikodarcimaher/" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a>
+				<a href="https://github.com/ndarci" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-github"></ion-icon>
+				</a>
+			</div>
+		</div>
+		<!-- rest of page -->
+		<div class="page-main">
+			<div class="frontpagetilegrid">
+				<!-- list of tiles -->
+				<!-- each tile is a link to the corresponding project page -->
+				<a href="omics_mandala/index.html" class="tile">
+					<img src="omics_mandala/FINAL_omics_mandala_thumbnail.png" alt="Omics Mandala">
+				</a>
+
+				<a href="pcaflav/index.html" class="tile">
+					<img src="pcaflav/pca_flav_thumbnail.png" alt="Dimensionally Reduced Flavor Plots">
+				</a>
+
+				<a href="downstairs/index.html" class="tile">
+					<img src="downstairs/downstairs_sketch_thumbnail.png" alt="Learning to go Downstairs sketch">
+				</a>
+
+				<a href="fornes/index.html" class="tile">
+					<img src="fornes/fornes_doodle_thumbnail.png" alt="Untitled Sketch">
+				</a>
+
+				<a href="scarydoodle/index.html" class="tile">
+					<img src="scarydoodle/scary_doodle_thumbnail.png" alt="Untitled Drawing">
+				</a>
+
+				<a href="crosswordinvaders/index.html" class="tile">
+					<img src="crosswordinvaders/crossword_spaceinvaders_thumbnail.png" alt="Crossword Space Invaders">
+				</a>
+
+				<a href="sunglass/index.html" class="tile">
+					<img src="sunglass/rochester_sun_glass_thumbnail.png" alt="Untitled painting">
+				</a>
+
+				<a href="iceberg/index.html" class="tile">
+					<img src="iceberg/msjoe_iceberg_thumbnail.png" alt="Iceberg">
+				</a>
+
+				<a href="sleepingwindow/index.html" class="tile">
+					<img src="sleepingwindow/sleeping_window_open_thumbnail.png" alt="Sleeping with the Window Open">
+				</a>
+
+				<a href="process_cell/index.html" class="tile">
+					<img src="process_cell/process_cell_FINAL_thumbnail.png" alt="Process Cell">
+				</a>
+
+				<a href="covid_calder/index.html" class="tile">
+					<img src="covid_calder/covid_calder_thumbnail.png" alt="Calder Drawing">
+				</a>
+
+				<a href="humanrights/index.html" class="tile">
+					<img src="humanrights/humanrights_faces_thumbnail.png" alt="Untitled Sketch">
+				</a>
+
+				<a href="niceassday/index.html" class="tile">
+					<img src="niceassday/niceassday_thumbnail.png" alt="Man It's A Nice Ass Day Artwork">
+				</a>
+
+				<a href="banana/index.html" class="tile">
+					<img src="banana/architecture_banana_thumbnail.png" alt="Banana House">
+				</a>
+
+				<a href="yeti/index.html" class="tile">
+					<img src="yeti/yeti_doodle_thumbnail.png" alt="Untitled drawing">
+				</a>
+
+				<a href="firstbigcanvas/index.html" class="tile">
+					<img src="firstbigcanvas/first_big_canvas_thumbnail.png" alt="Untitled Drawing">
+				</a>
+
+				<!-- empty tile for last row hack -->
+				<div class="tile"></div>
+			</div>
+		</div>
 	</div>
-	<div class="container">
-		<!-- <a href="tshirt/index.html" class="section">
-			<img src="../websiteportfolio/front/tshirt.png" alt="thing">
-			<div class="caption">T Shirts</div>
-		</a> -->
-	</div>
+	<!-- scripts to import icons from ionicon -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
