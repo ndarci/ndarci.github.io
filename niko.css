@@ -90,14 +90,6 @@ classes for front page grid of images
 	/* border: solid 1px blue; */
 }
 
-/* function to stack all images in a vertical feed on narrow screens */
-@media screen and (max-width: 800px) {
-	.frontpagetilegrid {
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-}
-
 .tile {
 	/* this is the subunit of frontpagetilegrid, a box that holds an image and scales with the window resizing */
 
@@ -132,12 +124,28 @@ classes for front page grid of images
 	min-width: 100%;
 	/* fill the entire tile area with the image, even if it crops the image   */
 	object-fit: cover;
-	vertical-align: bottom;
+	align-items: center;
+	/* vertical-align: bottom; */
 }
 
 .tile img:hover {
 	/* each image is a link. set the images to go opaque when hovered over  */
 	opacity: 0.5;
+}
+
+/* function to stack all images in a vertical feed on narrow screens */
+@media screen and (max-width: 800px) {
+	.frontpagetilegrid {
+		/* whole tile grid goes in an N-by-one column */
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.tile img {
+		/* special image growing properties are reversed now that axes are swapped */
+		min-height: 100%;
+		max-width: 100%;
+	}
 }
 
 /* 
