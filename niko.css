@@ -134,7 +134,7 @@ classes for front page grid of images
 }
 
 /* function to stack all images in a vertical feed on narrow screens */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
 	.frontpagetilegrid {
 		/* whole tile grid goes in an N-by-one column */
 		flex-direction: column;
@@ -145,6 +145,19 @@ classes for front page grid of images
 		/* special image growing properties are reversed now that axes are swapped */
 		min-height: 100%;
 		max-width: 100%;
+	}
+
+	/* also size up all the header items a bit */
+	h1 {
+		font-size: 60px;
+	}
+
+	.frontpageblurb {
+		font-size: 20px;
+	}
+
+	ion-icon {
+		font-size: 40px;
 	}
 }
 
