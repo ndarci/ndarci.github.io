@@ -90,6 +90,14 @@ classes for front page grid of images
 	/* border: solid 1px blue; */
 }
 
+/* function to stack all images in a vertical feed on narrow screens */
+@media screen and (max-width: 800px) {
+	.frontpagetilegrid {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
 .tile {
 	/* this is the subunit of frontpagetilegrid, a box that holds an image and scales with the window resizing */
 
